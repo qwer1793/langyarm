@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"kongxaintransformation\startup_stm32f103xb.o"
+"kongxaintransformation\main.o"
+"kongxaintransformation\gpio.o"
+"kongxaintransformation\dma.o"
+"kongxaintransformation\usart.o"
+"kongxaintransformation\stm32f1xx_it.o"
+"kongxaintransformation\stm32f1xx_hal_msp.o"
+"kongxaintransformation\stm32f1xx_hal_gpio_ex.o"
+"kongxaintransformation\stm32f1xx_hal_tim.o"
+"kongxaintransformation\stm32f1xx_hal_tim_ex.o"
+"kongxaintransformation\stm32f1xx_hal_uart.o"
+"kongxaintransformation\stm32f1xx_hal.o"
+"kongxaintransformation\stm32f1xx_hal_rcc.o"
+"kongxaintransformation\stm32f1xx_hal_rcc_ex.o"
+"kongxaintransformation\stm32f1xx_hal_gpio.o"
+"kongxaintransformation\stm32f1xx_hal_dma.o"
+"kongxaintransformation\stm32f1xx_hal_cortex.o"
+"kongxaintransformation\stm32f1xx_hal_pwr.o"
+"kongxaintransformation\stm32f1xx_hal_flash.o"
+"kongxaintransformation\stm32f1xx_hal_flash_ex.o"
+"kongxaintransformation\stm32f1xx_hal_exti.o"
+"kongxaintransformation\system_stm32f1xx.o"
+--strict --scatter "kongxaintransformation\kongxaintransformation.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "kongxaintransformation.map" -o kongxaintransformation\kongxaintransformation.axf
