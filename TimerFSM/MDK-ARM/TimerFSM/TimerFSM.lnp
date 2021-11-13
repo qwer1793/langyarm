@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"timerfsm\startup_stm32f103xb.o"
+"timerfsm\main.o"
+"timerfsm\gpio.o"
+"timerfsm\tim.o"
+"timerfsm\stm32f1xx_it.o"
+"timerfsm\stm32f1xx_hal_msp.o"
+"timerfsm\stm32f1xx_hal_gpio_ex.o"
+"timerfsm\stm32f1xx_hal_tim.o"
+"timerfsm\stm32f1xx_hal_tim_ex.o"
+"timerfsm\stm32f1xx_hal.o"
+"timerfsm\stm32f1xx_hal_rcc.o"
+"timerfsm\stm32f1xx_hal_rcc_ex.o"
+"timerfsm\stm32f1xx_hal_gpio.o"
+"timerfsm\stm32f1xx_hal_dma.o"
+"timerfsm\stm32f1xx_hal_cortex.o"
+"timerfsm\stm32f1xx_hal_pwr.o"
+"timerfsm\stm32f1xx_hal_flash.o"
+"timerfsm\stm32f1xx_hal_flash_ex.o"
+"timerfsm\stm32f1xx_hal_exti.o"
+"timerfsm\system_stm32f1xx.o"
+--strict --scatter "TimerFSM\TimerFSM.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TimerFSM.map" -o TimerFSM\TimerFSM.axf
